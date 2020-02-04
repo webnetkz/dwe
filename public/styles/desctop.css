@@ -14,8 +14,117 @@ header {
     display: block;
     color: rgb(1, 174, 255);
 }
-
 /* END HEADER STYLES */
 /*#################################################################*/
 /*#################################################################*/
 /*#################################################################*/
+/* MENU STYLES */
+menu {
+    height: 50px;
+    background-color: aqua;
+}
+/* END MENU STYLES */
+/*#################################################################*/
+/*#################################################################*/
+/*#################################################################*/
+/* INDEX STYLES */
+#index {
+    height: calc(100vh - (150px));
+    background: url('../images/bg.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+#index > h2 {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    animation: firsHeader 4s infinite;
+}
+@keyframes firsHeader{
+    50% {
+        color: #3426f8;
+    }
+}
+.indexContent > h3 {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-left: 50px;
+    font-weight: 500;
+}
+.indexContentTwo > h3 {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-left: 50px;
+    font-weight: 500;
+}
+.indexContent {
+    background-color: rgba(0, 22, 33, 0.2);
+    width: 70%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px black;
+    animation: showIndexContent 600ms linear;
+}
+.indexContentTwo {
+    background-color: rgba(0, 22, 33, 0.2);
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    animation: showIndexContentTwo 600ms linear;
+}
+@keyframes showIndexContent {
+    0% {
+        margin-left: -70%;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+@keyframes showIndexContentTwo {
+    0% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: 50%;
+    }
+}
+.tracking {
+    width: 50%;
+    padding: 20px;
+    margin-top: 40px;
+}
+.inp_btn_track {
+    transition-duration: 900ms;
+    padding: 5px;
+    display: block;
+    width: 70%;
+    outline: none;
+    margin-bottom: 10px;
+    border: none;
+    text-align: center;
+    font-size: 1.3em;
+    border-radius: 3px;
+    color: rgb(19, 55, 89);
+}
+.btn_track {
+  background-color: #f7bf34;
+}
+.btn_track:hover {
+  box-shadow: 0 0 10px black;
+  border-radius: 50px;
+  transform: scale(1.1);
+}
+.inp_track {
+
+}
+.inp_track:focus {
+  box-shadow: 0 0 10px black;
+  border-radius: 50px;
+  transform: scale(1.1);
+}
