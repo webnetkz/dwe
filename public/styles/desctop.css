@@ -1,0 +1,21 @@
+header {
+    height: 100px;
+    background-color: rgb(19, 55, 89);
+}
+.logo {
+    float: left;
+}
+.headerTexts {
+    float: right;
+    text-align: right;
+    padding: 10px;
+}
+.headerText {
+    display: block;
+    color: rgb(1, 174, 255);
+}
+
+/* END HEADER STYLES */
+/*#################################################################*/
+/*#################################################################*/
+/*#################################################################*/
