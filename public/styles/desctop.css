@@ -32,6 +32,8 @@ menu {
     height: calc(100vh - (150px));
     background: url('../images/bg.jpg') 50% 50% no-repeat;
     background-size: cover;
+    box-shadow: 0 0 10px black;
+    background-attachment: fixed;
 }
 #index > h2 {
     font-size: 36px;
@@ -97,7 +99,7 @@ menu {
 .tracking {
     width: 50%;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: -30px;
 }
 .inp_btn_track {
     transition-duration: 900ms;
@@ -115,16 +117,159 @@ menu {
 .btn_track {
   background-color: #f7bf34;
 }
+.labelTrak {
+    color: rgb(55, 55, 55);
+}
 .btn_track:hover {
   box-shadow: 0 0 10px black;
   border-radius: 50px;
   transform: scale(1.1);
 }
-.inp_track {
-
-}
-.inp_track:focus {
+.inp_btn_track:focus {
   box-shadow: 0 0 10px black;
   border-radius: 50px;
   transform: scale(1.1);
+}
+.forCalc {
+    text-decoration: none;
+    color: rgb(55, 55, 55);
+    background-color: #f7bf34;
+    padding: 15px;
+    line-height: 40px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px black;
+    transition-duration: 500ms;
+}
+.forCalc:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px black;
+}
+.forCalc:hover > .imgCalc {
+    animation: calcJump 500ms infinite;
+}
+.imgCalc {
+    height: 40px;
+    vertical-align: bottom;
+}
+@keyframes calcJump {
+    0% {
+
+    }
+    50% {
+        margin-bottom: 5px;
+    }
+    100% {
+
+    }
+}
+/* END INDEX STYLES */
+/*#################################################################*/
+/*#################################################################*/
+/*#################################################################*/
+/* FORYOU STYLES */
+#forYou {
+    padding: 20px 50px;
+}
+#forYou > h2 {
+    font-weight: 100;
+    font-size: 2em;
+    color: rgb(55, 55, 55);
+    margin-bottom: 40px;
+}
+.forYou {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.forYouItem {
+    height: 200px;
+    width: 30%;
+    box-shadow: 0 0 8px black;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding: 15px 10px;
+    transition-duration: 500ms;
+}
+.forYouItem:hover {
+    box-shadow: none;
+    background-color: rgb(19, 55, 89);
+    cursor: pointer;
+}
+.forYouItem:hover > .forYouImg {
+    transform: scale(1.2);
+}
+.forYouItem:hover > .forYouText {
+    color: white;
+}
+.forYouImg {
+    height: 80px;
+    margin-bottom: 5px;
+    transition-duration: 500ms;
+}
+.forYouText {
+    color: rgb(55, 55, 55);
+    transition-duration: 500ms;
+}
+/* END FORYOU STYLES */
+/*#################################################################*/
+/*#################################################################*/
+/*#################################################################*/
+/* CALC STYLES */
+#calc {
+    background-image: url('../images/calc/bg.png');
+    padding: 30px 20%;
+    background-attachment: fixed;
+}
+.lineCalc {
+    height: 20px;
+    background-color: #f7bf34;
+    box-shadow: 0 0 10px black;
+}
+.calc {
+    height: 400px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: 5px solid #f7bf34;
+    text-align: center;
+}
+.calc > form > label {
+    color: rgb(55, 55, 55);
+    font-size: 0.7em;
+}
+.calcInp {
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    outline: none;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px;
+    border-radius: 3px;
+    border: none;
+    background-color: #f7bf34;
+    transition-duration: 600ms;
+}
+.calcInp:focus {
+    transform: scale(1.1);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #f7bf34;
+}
+.serviceCalc {
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    outline: none;
+    font-size: 1em;
+    text-align: center;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #f7bf34;
+    transition-duration: 600ms;
 }

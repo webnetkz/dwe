@@ -1,5 +1,6 @@
 let modal = document.querySelector('.modal');
 let closeBtn = document.querySelector('.closeBtn');
-closeBtn.addEventListener('click', () => {
+
+function closeModal() {
     modal.style.top = '-120%';
-});
+};
